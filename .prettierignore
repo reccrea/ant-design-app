@@ -1,0 +1,12 @@
+/dist/*
+.local
+.husky
+.history
+.output.js
+/node_modules/**
+src/.DS_Store
+
+**/*.svg
+**/*.sh
+
+/public/*
