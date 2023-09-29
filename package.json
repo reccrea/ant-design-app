@@ -8,19 +8,27 @@
 		"build": "vue-tsc && vite build",
 		"preview": "vite preview",
 		"eslint": "eslint src --ext .js,.vue,.ts,.jsx,.tsx --fix",
-		"prettier": "prettier --config .prettierrc.cjs \"src/**/*.{vue,js,ts,tsx,jsx}\" --write"
+		"prettier": "prettier --config .prettierrc.cjs \"src/**/*.{vue,js,ts,tsx,jsx}\" --write",
+		"commit": "git add . && git-cz"
 	},
 	"dependencies": {
 		"vue": "^3.3.4"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^17.7.2",
+		"@commitlint/config-conventional": "^17.7.0",
 		"@types/node": "^20.7.1",
 		"@typescript-eslint/eslint-plugin": "^6.7.3",
 		"@typescript-eslint/parser": "^6.7.3",
 		"@vitejs/plugin-vue": "^4.2.3",
+		"commitizen": "^4.3.0",
+		"commitlint-config-cz": "^0.13.3",
+		"cz-conventional-changelog": "^3.3.0",
+		"cz-customizable": "^7.0.0",
 		"eslint": "^8.50.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-prettier": "^5.0.0",
+		"eslint-plugin-simple-import-sort": "^10.0.0",
 		"eslint-plugin-vue": "^9.17.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^14.0.1",
@@ -34,5 +42,13 @@
 			"eslint --fix",
 			"prettier --write"
 		]
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-customizable"
+		},
+		"cz-customizable": {
+			"config": ".cz-config.cjs"
+		}
 	}
 }
