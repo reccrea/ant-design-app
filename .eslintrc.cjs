@@ -26,6 +26,7 @@ module.exports = {
 	],
 	// 自定义规则
 	rules: {
+		// import顺序
 		"simple-import-sort/imports": [
 			"error",
 			{
@@ -48,4 +49,5 @@ module.exports = {
 			},
 		],
 	},
+	"vue/multi-word-component-names": "off",
 };

@@ -12,7 +12,8 @@
 		"commit": "git add . && git-cz"
 	},
 	"dependencies": {
-		"vue": "^3.3.4"
+		"vue": "^3.3.4",
+		"vue-router": "4"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.7.2",
