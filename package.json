@@ -12,6 +12,7 @@
 		"commit": "git add . && git-cz"
 	},
 	"dependencies": {
+		"normalize.css": "^8.0.1",
 		"pinia": "^2.1.6",
 		"pinia-plugin-persistedstate": "^3.2.0",
 		"vue": "^3.3.4",
